@@ -79,7 +79,6 @@
   .hero-definition { border-left: 1px solid var(--color-steel); padding-left: 30px; color: var(--color-graphite); font-size: 16px; line-height: 1.7; margin-bottom: 5px; }
   .hero-baseline { display: flex; justify-content: space-between; align-items: center; gap: 24px; color: var(--color-graphite); margin-top: 70px; padding-bottom: 28px; }
   .hero-baseline > span:first-child { display: flex; gap: 14px; }
-  .baseline-note { text-align: right; }
   .project-index { display: flex; flex-direction: column; min-width: 230px; }
   .project-index a { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 38px; }
   .project-index a > span { color: var(--color-graphite); font-size: 16px; }
@@ -114,17 +113,6 @@
   .method-steps h3 { font-size: 27px; letter-spacing: -.045em; margin-bottom: 16px; }
   .method-steps p { font-size: 16px; line-height: 1.65; color: var(--color-graphite); }
   .method-loop { display: flex; gap: 16px; margin-top: 34px; color: var(--color-graphite); }
-  .committee-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 55px; align-items: center; }
-  .committee-copy > p { color: var(--color-graphite); font-size: 18px; line-height: 1.65; margin-top: 25px; max-width: 480px; }
-  .people { margin-top: 38px; }
-  .people > div { display: grid; grid-template-columns: 1fr 1.5fr; gap: 14px; border-top: 1px solid var(--color-steel); padding-block: 15px; align-items: center; }
-  .people dt { display: flex; gap: 16px; align-items: center; font-size: 16px; }
-  .person-initial { color: var(--color-graphite); }
-  .people dd { color: var(--color-graphite); font-size: 16px; text-align: right; }
-  .committee-figure { padding-left: 32px; border-left: 1px solid var(--color-steel); }
-  .committee-figure svg { width: 100%; height: auto; }
-  .committee-figure figcaption { display: flex; justify-content: center; flex-wrap: wrap; gap: 13px; color: var(--color-paper); margin-top: 24px; }
-  .committee-figure figcaption > span { color: var(--color-graphite); }
   .contact-section { padding-bottom: 54px; }
   .contact-layout { display: grid; grid-template-columns: 8fr 4fr; gap: 65px; align-items: end; margin-top: 55px; }
   .contact-layout h2 { font-size: clamp(80px, 8.4vw, 120px); line-height: .95; letter-spacing: -.06em; }
@@ -161,7 +149,7 @@
   .diagram { width: 100%; height: auto; overflow: visible; }
   .diagram--mobile { display: none; }
   .diagram-guide { stroke: var(--color-steel); stroke-width: 1; fill: none; }
-  .diagram-lines, .triangle-line { stroke: var(--color-signal-line); stroke-width: 1.4; fill: none; }
+  .diagram-lines { stroke: var(--color-signal-line); stroke-width: 1.4; fill: none; }
   .diagram-label { fill: var(--color-paper); font-family: 'Geist Mono', monospace; font-size: 15px; }
   .diagram-small { fill: var(--color-graphite); font-family: 'Geist', sans-serif; font-size: 13px; }
   .diagram-title { fill: var(--color-paper); font-family: 'Geist', sans-serif; font-size: 23px; font-weight: 500; letter-spacing: -.035em; }
@@ -169,7 +157,6 @@
   .diagram-point { fill: var(--color-coal); stroke: var(--color-paper); stroke-width: 1.5; }
   .diagram-active { fill: var(--color-terminal); }
   .human-node { stroke: var(--color-paper); }
-  .triangle-initial { fill: var(--color-paper); font-family: 'Geist Mono', monospace; font-size: 25px; }
   .project-figure figcaption { display: flex; flex-direction: column; gap: 12px; margin-top: 30px; }
   .project-figure figcaption .mono { color: var(--color-paper); font-size: 11px; line-height: 1.8; }
   .project-figure figcaption > span:last-child { font-size: 13px; color: var(--color-graphite); }
@@ -217,9 +204,6 @@
     .diagram-small { font-size: 15px; }
     .method-steps { gap: 20px; }
     .method-steps h3 { font-size: 23px; }
-    .committee-layout { gap: 40px; }
-    .committee-figure { padding-left: 20px; }
-    .committee-figure figcaption { gap: 8px; }
     .contact-layout { gap: 35px; grid-template-columns: 1.5fr 1fr; }
     .site-footer { gap: 23px; }
   }
@@ -262,7 +246,6 @@
     .hero-definition { padding-left: 20px; font-size: 16px; }
     .hero-definition br { display: none; }
     .hero-baseline { margin-top: 48px; }
-    .baseline-note { display: none; }
     .section-block { padding-top: 28px; padding-bottom: 58px; }
     h2 { font-size: 47px; }
     .section-heading { margin: 38px 0 42px; gap: 25px; }
@@ -275,11 +258,6 @@
     .method-steps { grid-template-columns: repeat(3, 1fr); gap: 32px 28px; margin-top: 35px; }
     .method-steps h3 { font-size: 26px; }
     .method-number { margin-bottom: 17px; }
-    .committee-layout { grid-template-columns: 1fr; gap: 40px; margin-top: 38px; }
-    .committee-copy > p { max-width: 620px; }
-    .committee-figure { border: 0; padding: 0; width: min(100%, 480px); margin-inline: auto; }
-    .people { margin-top: 30px; }
-    .people > div { grid-template-columns: 1fr 1fr; }
     .contact-layout { gap: 26px; margin-top: 42px; }
     .contact-layout h2 { font-size: 80px; }
     .contact-intro { font-size: 21px; }
@@ -346,12 +324,6 @@
     .method-steps h3 { font-size: 28px; margin-bottom: 11px; }
     .method-steps p { max-width: 360px; }
     .method-loop { font-size: 11px; margin-top: 13px; gap: 12px; }
-    .committee-layout { gap: 28px; margin-top: 33px; }
-    .committee-copy > p { font-size: 17px; }
-    .people > div { grid-template-columns: 1fr; gap: 3px; padding-block: 13px; }
-    .people dd { text-align: left; padding-left: 36px; }
-    .committee-figure .diagram-label { font-size: 19px; }
-    .committee-figure figcaption { font-size: 11px; gap: 8px; }
     .contact-layout { grid-template-columns: 1fr; gap: 27px; margin-top: 36px; }
     .contact-layout h2 { font-size: clamp(64px, 15.4vw, 90px); }
     .contact-intro { font-size: 23px; line-height: 1.5; margin-top: 23px; }

@@ -4,6 +4,19 @@ Implementación de las especificaciones internas de producto y diseño. HTML sem
 
 La dirección «Editorial Hacker / Lab Notes» se concreta en fondo carbón, tipografía Geist, retícula y separadores visibles, diagramas y verde reservado a interacción y estados. El contenido vive en `index.html`, las interacciones en `src/main.ts` y los estilos y puntos de ruptura en `src/style.css`.
 
+## Variación: cuatro elementos
+
+La rama `codex/variacion-cuatro-elementos` parte de la versión visual aprobada disponible en `main`. Reinterpreta el comité con cuatro símbolos de trazo monocromo:
+
+| Aportación | Elemento | Frase |
+| --- | --- | --- |
+| Raúl · negocio y operaciones | Tierra / estructura | Yo sostengo. |
+| Javi · tecnología y negocio | Aire / pensamiento | Yo comprendo. |
+| Marc · ingeniería y producto | Agua / emoción | Yo siento. |
+| IA · capacidad de ejecución | Fuego / impulso | Yo actúo. |
+
+Las metáforas se presentan como lenguaje de marca. La IA se identifica como herramienta bajo supervisión humana. Una nota desplegable recoge el equilibrio entre curiosidad, compromiso, sensibilidad y ritmo de ejecución. Los símbolos reutilizables viven en `public/elements.svg` y los estilos de esta variante en `src/elements.css`.
+
 ## Desarrollo
 
 Requiere Node.js 22.12 o posterior y npm.
@@ -47,7 +60,7 @@ No hay backend de envío, almacenamiento de contactos ni confirmación de entreg
 - Navegación por anclas con sección activa, menú móvil con cierre mediante Escape, enlace para saltar al contenido, foco visible y diálogo nativo.
 - Adaptación desde 320 px y reducción de animación con `prefers-reduced-motion`.
 - Se distinguen fase y actividad: Turnos en curso; TraceFlow en fase de prototipo; OpenClaw/Aiden en investigación y en curso, según la guía 003. La interfaz principal está en español.
-- La tesis sobre el criterio forma parte del método de cinco pasos. El comité incluye los roles de Marc, Raúl y Javi y un diagrama de colaboración.
+- La tesis sobre el criterio forma parte del método de cinco pasos. El comité relaciona los roles del equipo y la IA con tierra, aire, agua y fuego, con símbolos acompañados de nombres y descripciones.
 
 ## Analítica
 
