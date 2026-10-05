@@ -118,3 +118,25 @@
 - **Rewind hint**: Reanudar sólo con autorización remota y evidencia redactada de configuración, build de `main`, Preview build no productiva y alcance mínimo de la GitHub App; no confundir el dry-run local con esos checks.
 
 ---
+
+### [12] quality-check → .dev-workflow/milestones/m2-connect-workers-builds/03-quality-report.md
+
+- **Status**: SUCCESS
+- **Read**: solicitud de reanudación del usuario; `.dev-workflow/01-spec.md`; `.dev-workflow/02-plan.md`; resultados de test e implementación de `m2`; informe BLOCKED anterior; checker declarativo; manifest, configuración y entrypoints documentados; estado/refs Git locales y remotos; PR #1 y checks de la app oficial; respuestas HTTP de producción y preview
+- **Wrote**: `.dev-workflow/milestones/m2-connect-workers-builds/03-quality-report.md`, `.dev-workflow/00-trace.md`
+- **Milestone**: `m2-connect-workers-builds`
+- **Summary**: Pasaron todos los gates locales y la evidencia remota confirma builds exitosos en `ee3fc9f` y `dc66029`, producción base intacta, preview aislada con contenido alternativo y ausencia de secretos materializados.
+- **Rewind hint**: Conservar `main` como única producción y `previews: {}` top-level; la selección global de repositorios de la GitHub App no fue observable con el token disponible y no debe darse por confirmada.
+
+---
+
+### [13] spec-reviewer → .dev-workflow/milestones/m2-connect-workers-builds/04-review.md
+
+- **Status**: APPROVED
+- **Read**: solicitud del usuario; instrucciones y referencias de dev-workflow; `.dev-workflow/01-spec.md`; `.dev-workflow/02-plan.md`; todos los resultados de `m2-connect-workers-builds`; quality report exitoso; configuración, checker, estado/diff documentados; GitHub API para ramas, PR #1, commits y checks; `wrangler.jsonc` remoto; respuestas HTTP de producción y preview
+- **Wrote**: `.dev-workflow/milestones/m2-connect-workers-builds/04-review.md`, `.dev-workflow/00-trace.md` (veredicto transcrito porque el reviewer independiente sólo dispuso de herramientas de lectura)
+- **Milestone**: `m2-connect-workers-builds`
+- **Summary**: Se aprobaron los criterios 8–11 con checks oficiales exitosos para producción y PR #1, URLs aisladas con contenido distinto, producción intacta, `previews: {}` y ausencia de secretos materializados.
+- **Rewind hint**: Mantener `main` como única producción y `previews: {}`; no afirmar que la instalación global de la GitHub App está limitada a repositorios seleccionados sin evidencia privada adicional.
+
+---
