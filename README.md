@@ -1,6 +1,6 @@
 # Valhalla · Landing page
 
-Implementación de [la especificación de producto](docs/product/002-valhalla_concepto_y_especificacion_landing_page.md) y de [la guía visual 003](docs/product/003-valhalla_especificacion_visual_landing_page.md). HTML semántico, TypeScript y Vite, sin framework de interfaz ni servicios externos necesarios para mostrar la página.
+Implementación de las especificaciones internas de producto y diseño. HTML semántico, TypeScript y Vite, sin framework de interfaz ni servicios externos necesarios para mostrar la página.
 
 La dirección «Editorial Hacker / Lab Notes» se concreta en fondo carbón, tipografía Geist, retícula y separadores visibles, diagramas y verde reservado a interacción y estados. El contenido vive en `index.html`, las interacciones en `src/main.ts` y los estilos y puntos de ruptura en `src/style.css`.
 
