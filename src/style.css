@@ -97,12 +97,12 @@
   .project-metadata dt { font-family: 'Geist Mono', monospace; font-size: 11px; line-height: 1.5; letter-spacing: .04em; color: var(--color-graphite); margin-bottom: 5px; }
   .project-metadata dd { font-size: 14px; line-height: 1.5; }
   .project-figure { border-left: 1px solid var(--color-steel); padding-left: 30px; min-width: 0; grid-column: 2; grid-row: 1 / span 2; align-self: center; }
-  .project--traceflow .project-layout { grid-template-columns: 7fr 5fr; }
-  .project--traceflow .project-copy { grid-column: 2; grid-row: 1; }
-  .project--traceflow .project-extra { grid-column: 2; }
-  .project--traceflow .project-figure { grid-column: 1; grid-row: 1 / span 2; border-left: 0; border-right: 1px solid var(--color-steel); padding-left: 0; padding-right: 30px; }
+  :is(.project--traceflow, .project--yggdrasil) .project-layout { grid-template-columns: 7fr 5fr; }
+  :is(.project--traceflow, .project--yggdrasil) .project-copy { grid-column: 2; grid-row: 1; }
+  :is(.project--traceflow, .project--yggdrasil) .project-extra { grid-column: 2; }
+  :is(.project--traceflow, .project--yggdrasil) .project-figure { grid-column: 1; grid-row: 1 / span 2; border-left: 0; border-right: 1px solid var(--color-steel); padding-left: 0; padding-right: 30px; }
   .title-slash { color: var(--color-graphite); }
-  .project--aiden { padding-bottom: 62px; }
+  .project--yggdrasil { padding-bottom: 62px; }
   .method-thesis { display: grid; grid-template-columns: 9fr 3fr; align-items: end; gap: 45px; margin-top: 58px; }
   .method-thesis h2 { font-size: clamp(40px, 4.4vw, 66px); line-height: 1.1; }
   .method-thesis h2 > span { display: block; color: var(--color-graphite); }
@@ -207,12 +207,12 @@
     .header-note { display: none; }
     .main-nav { gap: 22px; }
     .hero h1 { font-size: clamp(72px, 8.3vw, 92px); }
-    .project-layout, .project--traceflow .project-layout { grid-template-columns: 1fr 1.2fr; column-gap: 30px; }
-    .project--traceflow .project-layout { grid-template-columns: 1.2fr 1fr; }
+    .project-layout, :is(.project--traceflow, .project--yggdrasil) .project-layout { grid-template-columns: 1fr 1.2fr; column-gap: 30px; }
+    :is(.project--traceflow, .project--yggdrasil) .project-layout { grid-template-columns: 1.2fr 1fr; }
     .project-copy h3 { font-size: 43px; }
     .project-metadata { gap: 16px 24px; }
     .project-figure { padding-left: 22px; }
-    .project--traceflow .project-figure { padding-right: 22px; }
+    :is(.project--traceflow, .project--yggdrasil) .project-figure { padding-right: 22px; }
     .diagram-label { font-size: 17px; }
     .diagram-small { font-size: 15px; }
     .method-steps { gap: 20px; }
@@ -225,7 +225,7 @@
   }
   @media (max-width: 1000px) {
     .project { padding-bottom: 42px; }
-    .project-layout, .project--traceflow .project-layout { grid-template-columns: 1fr; gap: 35px; }
+    .project-layout, :is(.project--traceflow, .project--yggdrasil) .project-layout { grid-template-columns: 1fr; gap: 35px; }
     .project-copy h3 { font-size: 52px; }
     .project--aiden .project-copy h3 br { display: none; }
     .project--aiden .title-slash { margin-left: 9px; }
@@ -234,8 +234,8 @@
     .project-description { max-width: 590px; }
     .project-metadata { gap: 24px 42px; }
     .project-details { max-width: none; }
-    .project-figure, .project--traceflow .project-figure { border: 0; border-top: 1px solid var(--color-steel); padding: 25px 0 0; }
-    .project-copy, .project-extra, .project-figure, .project--traceflow .project-copy, .project--traceflow .project-extra, .project--traceflow .project-figure { grid-column: auto; grid-row: auto; }
+    .project-figure, :is(.project--traceflow, .project--yggdrasil) .project-figure { border: 0; border-top: 1px solid var(--color-steel); padding: 25px 0 0; }
+    .project-copy, .project-extra, .project-figure, :is(.project--traceflow, .project--yggdrasil) .project-copy, :is(.project--traceflow, .project--yggdrasil) .project-extra, :is(.project--traceflow, .project--yggdrasil) .project-figure { grid-column: auto; grid-row: auto; }
     .project-metadata { margin-top: 0; }
     .figure-label { margin-bottom: 18px; }
     .project-figure .diagram { max-width: 620px; margin-inline: auto; }
@@ -325,7 +325,7 @@
     .project-metadata dd { font-size: 16px; }
     .project-details { margin-top: 23px; }
     .project-details summary { gap: 12px; font-size: 16px; }
-    .project-figure, .project--traceflow .project-figure { padding-top: 21px; }
+    .project-figure, :is(.project--traceflow, .project--yggdrasil) .project-figure { padding-top: 21px; }
     .figure-label { font-size: 11px; gap: 10px; margin-bottom: 12px; }
     .diagram--desktop { display: none; }
     .diagram--mobile { display: block; }

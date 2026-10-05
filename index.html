@@ -41,8 +41,8 @@
       </section>
 
       <section class="projects-section wrap section-block" id="proyectos" aria-labelledby="projects-title" data-nav-section>
-        <div class="section-topline mono"><p><span class="section-index">[01]</span> PROYECTOS</p><span>03 EXPEDIENTES</span></div>
-        <div class="section-heading"><h2 id="projects-title">Tres proyectos.<br /> Una misma pregunta.</h2><nav class="project-index mono" aria-label="Índice de proyectos"><a href="#turnos">01 / Turnos <span aria-hidden="true">↗</span></a><a href="#traceflow">02 / TraceFlow <span aria-hidden="true">↗</span></a><a href="#aiden">03 / OpenClaw & Aiden <span aria-hidden="true">↗</span></a></nav></div>
+        <div class="section-topline mono"><p><span class="section-index">[01]</span> PROYECTOS</p><span>04 EXPEDIENTES</span></div>
+        <div class="section-heading"><h2 id="projects-title">Cuatro proyectos.<br /> Una misma pregunta.</h2><nav class="project-index mono" aria-label="Índice de proyectos"><a href="#turnos">01 / Turnos <span aria-hidden="true">↗</span></a><a href="#traceflow">02 / TraceFlow <span aria-hidden="true">↗</span></a><a href="#aiden">03 / OpenClaw & Aiden <span aria-hidden="true">↗</span></a><a href="#yggdrasil">04 / Yggdrasil <span aria-hidden="true">↗</span></a></nav></div>
 
         <article class="project project--turnos" id="turnos" data-project="turnos" aria-labelledby="turnos-title">
           <div class="project-topline mono"><span>PROJECT_001</span><span class="status status--active"><span class="status-dot" aria-hidden="true"></span><span class="status-key">ACTIVIDAD /</span> EN CURSO</span></div>
@@ -129,6 +129,35 @@
             <div class="project-extra">
               <dl class="project-metadata"><div><dt>TIPO</dt><dd>Investigación aplicada</dd></div><div><dt>ÁMBITO</dt><dd>Agentes de IA</dd></div><div><dt>ACTIVIDAD</dt><dd class="activity-value"><span class="status-dot" aria-hidden="true"></span> En curso</dd></div></dl>
               <details class="project-details" data-project-detail="aiden"><summary>La pregunta que investigamos <span class="details-symbol" aria-hidden="true">+</span></summary><p>¿Cómo coordinar agentes que comparten contexto y utilizan herramientas sin perder el control sobre sus acciones? Investigamos memoria y orquestación manteniendo la supervisión humana.</p></details>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project--yggdrasil" id="yggdrasil" data-project="yggdrasil" aria-labelledby="yggdrasil-title">
+          <div class="project-topline mono"><span>PROJECT_004</span><span class="status"><span class="status-ring" aria-hidden="true"></span><span class="status-key">FASE /</span> CONCEPTO</span></div>
+          <div class="project-layout">
+            <div class="project-copy"><h3 id="yggdrasil-title">YGGDRASIL</h3><p class="project-claim">¿Quién le dio ese poder?</p><p class="project-description">Una capa de autoridad para agentes de IA. Qué pueden hacer, quién les concedió ese poder y hasta dónde pueden delegarlo. Límites claros y un rastro que permita retirarlo.</p></div>
+            <figure class="project-figure">
+              <div class="figure-label mono"><span>FIG. 04 / EL PODER TIENE UN ORIGEN</span><span aria-hidden="true">↳</span></div>
+              <svg class="diagram diagram--desktop" viewBox="0 0 600 320" role="img" aria-labelledby="yggdrasil-diagram-title yggdrasil-diagram-description">
+                <title id="yggdrasil-diagram-title">Una cadena de autoridad con límites</title><desc id="yggdrasil-diagram-description">Una raíz de confianza concede autoridad sobre finanzas a un agente autorizado para delegar. Este delega sólo contabilidad a otro agente, que puede usar esa autoridad sin delegarla. Cada concesión conserva su origen y puede revocarse.</desc>
+                <g class="diagram-guide" aria-hidden="true"><path d="M0 160h600M300 0v320"/></g>
+                <g class="diagram-lines"><path d="M100 95v65h200v65M300 160h200v65"/></g>
+                <circle class="diagram-active" cx="100" cy="95" r="6"/><g class="diagram-point"><circle cx="300" cy="160" r="6"/><circle cx="300" cy="225" r="6"/><circle cx="500" cy="225" r="6"/></g>
+                <g class="diagram-label" text-anchor="middle"><text x="100" y="55">RAÍZ DE CONFIANZA</text><text x="300" y="125">AGENTE / FINANZAS</text><text x="300" y="255">CONTABILIDAD</text><text x="500" y="255">PAGOS</text></g>
+                <g class="diagram-small" text-anchor="middle"><text x="100" y="76">Concede autoridad</text><text x="300" y="145">Puede usar y delegar</text><text x="300" y="277">Sólo puede usar</text><text x="500" y="277">Otra rama de autoridad</text></g>
+              </svg>
+              <svg class="diagram diagram--mobile" viewBox="0 0 280 330" role="img" aria-label="La raíz de confianza concede autoridad sobre finanzas. Un agente autorizado puede delegar contabilidad o pagos. El agente de contabilidad sólo puede usar su autoridad, no delegarla.">
+                <g class="diagram-lines"><path d="M28 48v113M28 161v66h30M28 161v133h30"/></g>
+                <circle class="diagram-active" cx="28" cy="48" r="5"/><g class="diagram-point"><circle cx="28" cy="161" r="5"/><circle cx="58" cy="227" r="5"/><circle cx="58" cy="294" r="5"/></g>
+                <g class="diagram-label mobile-label"><text x="48" y="43">RAÍZ DE CONFIANZA</text><text x="48" y="151">AGENTE / FINANZAS</text><text x="77" y="222">CONTABILIDAD</text><text x="77" y="289">PAGOS</text></g>
+                <g class="diagram-small"><text x="48" y="65">Concede autoridad</text><text x="48" y="174">Puede usar y delegar</text><text x="77" y="245">Sólo puede usar</text><text x="77" y="312">Otra rama de autoridad</text></g>
+              </svg>
+              <figcaption><span class="mono">CONCEDER → DELEGAR → PODER REVOCAR</span><span>Esquema conceptual</span></figcaption>
+            </figure>
+            <div class="project-extra">
+              <dl class="project-metadata"><div><dt>TIPO</dt><dd>Concepto de producto</dd></div><div><dt>ÁMBITO</dt><dd>Autoridad para agentes</dd></div><div><dt>FASE</dt><dd>Concepto</dd></div></dl>
+              <details class="project-details" data-project-detail="yggdrasil"><summary>La pregunta que investigamos <span class="details-symbol" aria-hidden="true">+</span></summary><p>¿Cómo dar autonomía a un agente sin perder de vista sus límites? Exploramos una jerarquía de autoridad donde cada concesión conserva su origen. Usar un permiso no implica poder delegarlo; delegar requiere autorización y nunca amplía el poder recibido. Al revocar una concesión, dejan de ser válidas las delegaciones que dependían exclusivamente de ella.</p></details>
             </div>
           </div>
         </article>
