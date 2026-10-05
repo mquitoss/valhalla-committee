@@ -148,6 +148,11 @@ assert.equal(wranglerConfig.$schema, "./node_modules/wrangler/config-schema.json
 assert.equal(wranglerConfig.name, "valhalla-committee");
 assert.equal(wranglerConfig.compatibility_date, "2026-10-05");
 assert.deepEqual(wranglerConfig.assets, { directory: "./dist" });
+assert.deepEqual(
+  wranglerConfig.previews,
+  {},
+  'wrangler.jsonc must declare top-level "previews" as exactly an empty object',
+);
 
 const forbiddenWranglerKeys = [
   "main",

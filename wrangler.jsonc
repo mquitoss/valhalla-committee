@@ -2,6 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "valhalla-committee",
   "compatibility_date": "2026-10-05",
+  "previews": {},
   "assets": {
     "directory": "./dist"
   }
