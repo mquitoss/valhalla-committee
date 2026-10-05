@@ -74,3 +74,47 @@
 - **Rewind hint**: Stop before committing if checks fail, secrets/generated artifacts appear, protected paths enter the index, or `main` no longer matches the inspected remote state.
 
 ---
+
+### [8] git-flow-committer → .dev-workflow/10-commit-result.md
+
+- **Status**: SUCCESS
+- **Read**: `.dev-workflow/09-commit-plan.md`; approved milestone artifacts; staged status/diff; pre-commit check results; commit output; push output; local and remote refs
+- **Wrote**: `.dev-workflow/10-commit-result.md`, `.dev-workflow/00-trace.md`
+- **Milestone**: `m1-configure-static-assets`
+- **Summary**: Created commit `f6ab0ae82e2fa114720bf1e4e5929862e4af9d04` and pushed it normally to `origin/main`, with the remote ref verified at the same SHA.
+- **Rewind hint**: The pushed commit is complete; retain the post-commit result and trace as local evidence unless a separately authorized follow-up commit is requested.
+
+---
+
+### [9] test-writer → .dev-workflow/milestones/m2-connect-workers-builds/01-test-result.md
+
+- **Status**: READY
+- **Read**: solicitud del usuario y error oficial comunicado de Wrangler 4.147.0; `.dev-workflow/01-spec.md`; `.dev-workflow/02-plan.md`; `.dev-workflow/00-trace.md`; checker declarativo existente; `package.json`; `wrangler.jsonc`; referencias `artifact-conventions.md` y `principles.md`; estado Git
+- **Wrote**: `.dev-workflow/milestones/m1-configure-static-assets/check-config.mjs`, `.dev-workflow/milestones/m2-connect-workers-builds/01-test-result.md`, `.dev-workflow/00-trace.md`
+- **Milestone**: `m2-connect-workers-builds`
+- **Summary**: Se añadió la regresión mínima que exige `previews` como objeto top-level exactamente vacío y se registró el fallo rojo esperado contra la configuración actual.
+- **Rewind hint**: Añadir únicamente `"previews": {}` a `wrangler.jsonc` durante implementación y volver a ejecutar el checker antes de reintentar Workers Builds; no publicar desde esta fase.
+
+---
+
+### [10] ts-developer → .dev-workflow/milestones/m2-connect-workers-builds/02-ts-result.md
+
+- **Status**: SUCCESS
+- **Read**: solicitud del usuario; `.dev-workflow/01-spec.md`; `.dev-workflow/02-plan.md`; `.dev-workflow/milestones/m2-connect-workers-builds/01-test-result.md`; checker declarativo; `package.json`; `wrangler.jsonc`; referencias de dev-workflow, Wrangler, Cloudflare Workers y estado/diff Git
+- **Wrote**: `wrangler.jsonc`, `.dev-workflow/milestones/m2-connect-workers-builds/02-ts-result.md`, `.dev-workflow/00-trace.md`
+- **Milestone**: `m2-connect-workers-builds`
+- **Summary**: Se añadió exclusivamente `"previews": {}` top-level y pasaron checker, tipos, build y dry-run assets-only sin ejecutar preview ni crear estado remoto.
+- **Rewind hint**: Mantener `previews` exactamente vacío y top-level; no añadir bindings, variables o secretos ni ejecutar `wrangler preview` desde local.
+
+---
+
+### [11] quality-check → .dev-workflow/milestones/m2-connect-workers-builds/03-quality-report.md
+
+- **Status**: BLOCKED
+- **Read**: solicitud del usuario; `.dev-workflow/01-spec.md`; `.dev-workflow/02-plan.md`; resultados de test e implementación de `m2`; checker declarativo; `README.md`; `package.json`; `wrangler.jsonc`; schema local de Wrangler 4.147.0; documentación oficial vigente de Wrangler y Worker Previews; estado y diff Git
+- **Wrote**: `.dev-workflow/milestones/m2-connect-workers-builds/03-quality-report.md`, `.dev-workflow/00-trace.md`
+- **Milestone**: `m2-connect-workers-builds`
+- **Summary**: Todos los gates locales solicitados pasaron y la forma top-level quedó confirmada, pero el hito sigue bloqueado porque no se ejecutaron ni evidenciaron los checks remotos obligatorios y el usuario prohibió preview/deploy reales.
+- **Rewind hint**: Reanudar sólo con autorización remota y evidencia redactada de configuración, build de `main`, Preview build no productiva y alcance mínimo de la GitHub App; no confundir el dry-run local con esos checks.
+
+---
