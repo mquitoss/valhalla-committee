@@ -41,9 +41,9 @@ No hay backend de envío, almacenamiento de contactos ni confirmación de entreg
 
 ## Interacciones y accesibilidad
 
-- Los tres proyectos aparecen como expedientes consecutivos. Cada uno tiene un desplegable nativo con la pregunta que se investiga, accesible con teclado.
+- Los cuatro proyectos aparecen como expedientes consecutivos. Cada uno tiene un desplegable nativo con la pregunta que se investiga, accesible con teclado.
 - Los diagramas SVG tienen descripciones accesibles y una composición específica para móvil. Son esquemas conceptuales, no capturas de productos en funcionamiento.
-- La página conserva su contenido esencial y los desplegables en el HTML. Sin JavaScript, el menú y los tres proyectos siguen visibles.
+- La página conserva su contenido esencial y los desplegables en el HTML. Sin JavaScript, el menú y los cuatro proyectos siguen visibles.
 - Navegación por anclas con sección activa, menú móvil con cierre mediante Escape, enlace para saltar al contenido, foco visible y diálogo nativo.
 - Adaptación desde 320 px y reducción de animación con `prefers-reduced-motion`.
 - Se distinguen fase y actividad: Turnos en curso; TraceFlow en fase de prototipo; OpenClaw/Aiden en investigación y en curso, según la guía 003. La interfaz principal está en español.
@@ -69,6 +69,6 @@ Están disponibles como eventos `valhalla:analytics`, en `window.valhallaEvents`
 ## Antes de publicar
 
 1. Crear el buzón y configurar su dirección.
-2. Confirmar textos públicos y estados de los tres proyectos.
+2. Confirmar textos públicos y estados de los cuatro proyectos.
 3. Configurar el colector si se necesitan métricas persistentes.
 4. Decidir dominio y alojamiento; comprobar la versión publicada en escritorio y móvil.
