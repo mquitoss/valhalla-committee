@@ -6,3 +6,4 @@ dist/
 !.env.example
 .local/
 docs/product/
+.wrangler
