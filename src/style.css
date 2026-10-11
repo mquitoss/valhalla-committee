@@ -123,8 +123,7 @@
   .people dd { color: var(--color-graphite); font-size: 16px; text-align: right; }
   .committee-figure { padding-left: 32px; border-left: 1px solid var(--color-steel); }
   .committee-figure svg { width: 100%; height: auto; }
-  .committee-figure figcaption { display: flex; justify-content: center; flex-wrap: wrap; gap: 13px; color: var(--color-paper); margin-top: 24px; }
-  .committee-figure figcaption > span { color: var(--color-graphite); }
+  .committee-figure figcaption { text-align: center; color: var(--color-graphite); font-size: 16px; line-height: 1.65; margin-top: 24px; }
   .contact-section { padding-bottom: 54px; }
   .contact-layout { display: grid; grid-template-columns: 8fr 4fr; gap: 65px; align-items: end; margin-top: 55px; }
   .contact-layout h2 { font-size: clamp(80px, 8.4vw, 120px); line-height: .95; letter-spacing: -.06em; }
@@ -161,7 +160,7 @@
   .diagram { width: 100%; height: auto; overflow: visible; }
   .diagram--mobile { display: none; }
   .diagram-guide { stroke: var(--color-steel); stroke-width: 1; fill: none; }
-  .diagram-lines, .triangle-line { stroke: var(--color-signal-line); stroke-width: 1.4; fill: none; }
+  .diagram-lines { stroke: var(--color-signal-line); stroke-width: 1.4; fill: none; }
   .diagram-label { fill: var(--color-paper); font-family: 'Geist Mono', monospace; font-size: 15px; }
   .diagram-small { fill: var(--color-graphite); font-family: 'Geist', sans-serif; font-size: 13px; }
   .diagram-title { fill: var(--color-paper); font-family: 'Geist', sans-serif; font-size: 23px; font-weight: 500; letter-spacing: -.035em; }
@@ -169,7 +168,13 @@
   .diagram-point { fill: var(--color-coal); stroke: var(--color-paper); stroke-width: 1.5; }
   .diagram-active { fill: var(--color-terminal); }
   .human-node { stroke: var(--color-paper); }
-  .triangle-initial { fill: var(--color-paper); font-family: 'Geist Mono', monospace; font-size: 25px; }
+  .committee-circle-fill { fill: var(--color-paper); fill-opacity: .025; }
+  .committee-overlap { fill: var(--color-paper); fill-opacity: .035; }
+  .committee-common { fill: var(--color-paper); fill-opacity: .1; }
+  .committee-circle-outline { fill: none; stroke: var(--color-signal-line); stroke-width: 1.4; }
+  .committee-member-name { fill: var(--color-paper); font-family: 'Geist', sans-serif; font-size: 29px; font-weight: 500; letter-spacing: -.035em; }
+  .committee-member-role { fill: var(--color-graphite); font-family: 'Geist', sans-serif; font-size: 18px; }
+  .committee-common-label { fill: var(--color-paper); font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: .01em; }
   .project-figure figcaption { display: flex; flex-direction: column; gap: 12px; margin-top: 30px; }
   .project-figure figcaption .mono { color: var(--color-paper); font-size: 11px; line-height: 1.8; }
   .project-figure figcaption > span:last-child { font-size: 13px; color: var(--color-graphite); }
@@ -219,7 +224,6 @@
     .method-steps h3 { font-size: 23px; }
     .committee-layout { gap: 40px; }
     .committee-figure { padding-left: 20px; }
-    .committee-figure figcaption { gap: 8px; }
     .contact-layout { gap: 35px; grid-template-columns: 1.5fr 1fr; }
     .site-footer { gap: 23px; }
   }
@@ -348,10 +352,11 @@
     .method-loop { font-size: 11px; margin-top: 13px; gap: 12px; }
     .committee-layout { gap: 28px; margin-top: 33px; }
     .committee-copy > p { font-size: 17px; }
+    .committee-member-role { font-size: 20px; }
+    .committee-common-label { font-size: 16px; }
     .people > div { grid-template-columns: 1fr; gap: 3px; padding-block: 13px; }
     .people dd { text-align: left; padding-left: 36px; }
-    .committee-figure .diagram-label { font-size: 19px; }
-    .committee-figure figcaption { font-size: 11px; gap: 8px; }
+    .committee-figure figcaption { font-size: 15px; }
     .contact-layout { grid-template-columns: 1fr; gap: 27px; margin-top: 36px; }
     .contact-layout h2 { font-size: clamp(64px, 15.4vw, 90px); }
     .contact-intro { font-size: 23px; line-height: 1.5; margin-top: 23px; }

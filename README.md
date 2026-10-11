@@ -47,7 +47,7 @@ No hay backend de envío, almacenamiento de contactos ni confirmación de entreg
 - Navegación por anclas con sección activa, menú móvil con cierre mediante Escape, enlace para saltar al contenido, foco visible y diálogo nativo.
 - Adaptación desde 320 px y reducción de animación con `prefers-reduced-motion`.
 - Se distinguen fase y actividad: Turnos en curso; TraceFlow en fase de prototipo; OpenClaw/Aiden en investigación y en curso, según la guía 003. La interfaz principal está en español.
-- La tesis sobre el criterio forma parte del método de cinco pasos. El comité incluye los roles de Marc, Raúl y Javi y un diagrama de colaboración.
+- La tesis sobre el criterio forma parte del método de cinco pasos. El comité incluye los roles de Marc, Raúl y Javi y tres círculos superpuestos que muestran cómo se complementan; su intersección central representa el criterio compartido.
 
 ## Analítica
 
