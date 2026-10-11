@@ -116,10 +116,10 @@
   .method-loop { display: flex; gap: 16px; margin-top: 34px; color: var(--color-graphite); }
   .committee-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 55px; align-items: center; }
   .committee-copy > p { color: var(--color-graphite); font-size: 18px; line-height: 1.65; margin-top: 25px; max-width: 480px; }
+  .committee-copy > .committee-principle { color: var(--color-paper); margin-top: 32px; }
   .people { margin-top: 38px; }
   .people > div { display: grid; grid-template-columns: 1fr 1.5fr; gap: 14px; border-top: 1px solid var(--color-steel); padding-block: 15px; align-items: center; }
-  .people dt { display: flex; gap: 16px; align-items: center; font-size: 16px; }
-  .person-initial { color: var(--color-graphite); }
+  .people dt { font-size: 16px; }
   .people dd { color: var(--color-graphite); font-size: 16px; text-align: right; }
   .committee-figure { padding-left: 32px; border-left: 1px solid var(--color-steel); }
   .committee-figure svg { width: 100%; height: auto; }
@@ -355,7 +355,7 @@
     .committee-member-role { font-size: 20px; }
     .committee-common-label { font-size: 16px; }
     .people > div { grid-template-columns: 1fr; gap: 3px; padding-block: 13px; }
-    .people dd { text-align: left; padding-left: 36px; }
+    .people dd { text-align: left; }
     .committee-figure figcaption { font-size: 15px; }
     .contact-layout { grid-template-columns: 1fr; gap: 27px; margin-top: 36px; }
     .contact-layout h2 { font-size: clamp(64px, 15.4vw, 90px); }
