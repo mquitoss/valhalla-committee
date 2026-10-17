@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Buscar oportunidades ya es un trabajo. Job Crawler busca y evalúa oportunidades y prepara un resumen para tu revisión. El sistema busca. Tú decides." />
+    <meta property="og:title" content="Job Crawler — Buscar oportunidades ya es un trabajo. / Valhalla" />
+    <meta property="og:description" content="Dos ciclos, un contexto compartido y una decisión humana. Explora el sistema de Job Crawler." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Job Crawler — Buscar oportunidades ya es un trabajo. / Valhalla</title>
+  </head>
+  <body class="crawler-page">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" id="inicio">
+      <div class="header-inner wrap">
+        <a class="brand" href="/" aria-label="Valhalla, inicio">VALHALLA</a>
+        <span class="header-note mono">PROJECT_005</span>
+        <nav class="jc-nav mono" aria-label="Navegación del proyecto"><a href="/#job-crawler"><span aria-hidden="true">↖</span> Todos los proyectos</a><a href="#sistema">El sistema <span aria-hidden="true">↓</span></a></nav>
+      </div>
+    </header>
+    <main id="contenido" tabindex="-1">
+      <section class="hero jc-hero wrap" aria-labelledby="crawler-title">
+        <div class="hero-topline mono"><p>JOB CRAWLER / INVESTIGACIÓN APLICADA</p><span class="status status--active"><span class="status-dot" aria-hidden="true"></span>EN FUNCIONAMIENTO</span></div>
+        <h1 id="crawler-title">Buscar oportunidades<br /> ya es un trabajo.</h1>
+        <div class="hero-bottom">
+          <div class="hero-intro"><p>Abrir portales. Repetir filtros. Descartar lo mismo que ayer. Y mañana, volver a empezar.</p><p>¿Y si la búsqueda llegara hecha?</p><a class="text-link" href="#sistema"><span class="link-arrow" aria-hidden="true">↓</span> Explorar el sistema</a></div>
+          <p class="jc-hero-principle">El sistema busca.<br />Tú decides.</p>
+        </div>
+        <div class="hero-baseline mono"><span>BUSCAR <span aria-hidden="true">→</span> PROPONER <span aria-hidden="true">→</span> DECIDIR</span><span class="baseline-note">DELEGAR LA REPETICIÓN. CONSERVAR EL CRITERIO.</span></div>
+      </section>
+
+      <section class="jc-concept wrap section-block" id="concepto" aria-labelledby="concept-title">
+        <div class="section-topline mono"><p><span class="section-index">[01]</span> LA IDEA</p><span>RECUPERAR LA MAÑANA</span></div>
+        <div class="jc-concept-layout"><h2 id="concept-title">Tu atención merece<br />un trabajo mejor.</h2><div><p>Buscar una oportunidad y decidir si es para ti son trabajos distintos. El primero tiene mucho de repetición. El segundo necesita tu criterio.</p><p>Job Crawler rastrea fuentes, contrasta ofertas y las ordena según tu perfil. Cada mañana prepara un resumen para que puedas empezar por lo que merece una mirada.</p><p class="jc-concept-last">La búsqueda se delega. La decisión sigue contigo.</p></div></div>
+      </section>
+
+      <section class="jc-system-section wrap section-block" id="sistema" aria-labelledby="system-title">
+        <div class="section-topline mono"><p><span class="section-index">[02]</span> EL SISTEMA</p><span>MAPA INTERACTIVO / V.01</span></div>
+        <div class="jc-system-intro"><h2 id="system-title">Dos ritmos.<br />Una decisión tuya.</h2><p>A las cinco, un ciclo busca y evalúa. A las nueve, otro prepara lo disponible para tu revisión. Dos disparadores independientes, un contexto compartido.</p></div>
+        <div class="jc-map" id="crawler-map" data-motion="off">
+          <div class="jc-toolbar" hidden>
+            <div class="jc-filters" role="group" aria-label="Recorrido del mapa">
+              <button type="button" class="jc-filter mono" data-loop="all" aria-pressed="true">Todo el sistema</button>
+              <button type="button" class="jc-filter mono" data-loop="search" aria-pressed="false">01 / Búsqueda</button>
+              <button type="button" class="jc-filter mono" data-loop="publish" aria-pressed="false">02 / Publicación</button>
+            </div>
+            <button class="jc-motion mono" type="button" aria-pressed="false">Animación <span data-motion-label>pausada</span><span class="jc-motion-dot" aria-hidden="true"></span></button>
+          </div>
+          <div class="jc-timeline" hidden>
+            <button class="jc-play mono" type="button"><span aria-hidden="true">▷</span> Recorrer el día</button>
+            <div class="jc-time-track"><span class="mono">05:00</span><div class="jc-time-line" aria-hidden="true"><span id="day-progress"></span></div><span class="mono">09:00</span><span class="jc-time-human mono">TU REVISIÓN</span></div>
+            <p class="jc-play-state mono" id="day-status" role="status">Lectura del ciclo</p>
+          </div>
+          <div class="jc-map-layout">
+            <div class="jc-flow" aria-label="Diagrama de los dos ciclos de Job Crawler">
+              <svg class="jc-connections" aria-hidden="true"><defs><marker id="flow-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0 7 3.5 0 7" fill="none" stroke="context-stroke"/></marker></defs><g id="flow-paths"></g></svg>
+              <section class="jc-loop" data-flow="search" aria-labelledby="search-title">
+                <div class="jc-loop-heading"><span class="jc-loop-clock">05:00<span class="jc-clock-tick" aria-hidden="true"></span></span><p class="mono">LOOP 01 / EXPLORACIÓN</p><h3 id="search-title">Buscar y evaluar.</h3></div>
+                <ol class="jc-steps" role="list"><li class="jc-step">
+  <button class="jc-node" type="button" data-node="01" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">01</span>
+    <span class="jc-node-copy"><span class="jc-node-title">El día empieza solo.</span><span class="jc-node-tool mono">systemd (Linux) · launchd (macOS)</span><span class="jc-node-summary">A las 05:00 se activa la búsqueda diaria.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node" type="button" data-node="02" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">02</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Buscar con contexto.</span><span class="jc-node-tool mono">Python · Django · PostgreSQL</span><span class="jc-node-summary">Carga el contexto, planifica y conserva las tareas.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node" type="button" data-node="03" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">03</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Salir a buscar.</span><span class="jc-node-tool mono">Brave Search API · Python · HTTPX</span><span class="jc-node-summary">Localiza empresas, páginas de empleo y URLs candidatas.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node" type="button" data-node="04" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">04</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Volver a la fuente.</span><span class="jc-node-tool mono">Python · HTTPX · APIs Greenhouse/Lever · PostgreSQL</span><span class="jc-node-summary">Valida, unifica y guarda. BambooHR, sujeto a validación.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node" type="button" data-node="05" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">05</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Encontrar el encaje.</span><span class="jc-node-tool mono">JEV — Typesafe AI · Python</span><span class="jc-node-summary">Evalúa de forma estructurada y aplica reglas de prioridad.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node jc-node--optional" type="button" data-node="06" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">06</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Mirar más a fondo.</span><span class="jc-node-tool mono">Codex CLI · modelos OpenAI · Python · Pydantic</span><span class="jc-node-summary">Análisis opcional de la evidencia, con salida validada.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">+</span>
+  </button>
+</li></ol>
+                <p class="jc-loop-caption mono">OFERTAS + EVIDENCIA <span aria-hidden="true">↘</span></p>
+              </section>
+              <div class="jc-shared">
+                <div class="jc-cycle-symbol" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M28 18a38 38 0 0 1 59 29m-8-5 8 5 5-8M72 82A38 38 0 0 1 13 53m8 5-8-5-5 8"/></svg><span class="mono">DOS LOOPS.<br />UN SISTEMA.</span></div>
+                <p class="jc-context-caption mono">LO QUE ENCUENTRA.<br />LO QUE DECIDES.</p>
+                <button class="jc-memory jc-node" type="button" data-node="memory" aria-pressed="false" aria-controls="node-detail"><svg viewBox="0 0 42 46" aria-hidden="true"><ellipse cx="21" cy="9" rx="15" ry="6"/><path d="M6 9v27c0 8 30 8 30 0V9M6 18c0 8 30 8 30 0M6 27c0 8 30 8 30 0"/></svg><span class="jc-node-title">PostgreSQL 17</span><span class="jc-node-summary">Un contexto<br /> compartido.</span><span class="jc-memory-meta mono">CATÁLOGO · HISTORIAL<br /> EVALUACIONES<br /> ESTADO DEL TRABAJO</span></button>
+                <p class="jc-shared-caption">El dashboard consulta estos datos y guarda tus decisiones.</p>
+                <p class="jc-next-day mono"><span aria-hidden="true">↺</span> CONTEXTO PARA<br />EL SIGUIENTE DÍA</p>
+              </div>
+              <section class="jc-loop" data-flow="publish" aria-labelledby="publish-title">
+                <div class="jc-loop-heading"><span class="jc-loop-clock">09:00<span class="jc-clock-tick" aria-hidden="true"></span></span><p class="mono">LOOP 02 / PUBLICACIÓN</p><h3 id="publish-title">Acercar y decidir.</h3></div>
+                <ol class="jc-steps" start="7" role="list"><li class="jc-step">
+  <button class="jc-node" type="button" data-node="07" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">07</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Otra hora. Otro ciclo.</span><span class="jc-node-tool mono">systemd / launchd</span><span class="jc-node-summary">A las 09:00 se activa la publicación independiente.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node" type="button" data-node="08" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">08</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Preparar lo relevante.</span><span class="jc-node-tool mono">Python · Django ORM · PostgreSQL</span><span class="jc-node-summary">Fija un resumen inmutable y lo deja en la cola de salida.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node" type="button" data-node="09" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">09</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Dar salida al resumen.</span><span class="jc-node-tool mono">Python · HTTPX · API HTTP/JSON privada</span><span class="jc-node-summary">Solicita el envío al conector y consulta su estado.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node" type="button" data-node="10" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">10</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Llegar donde ya estás.</span><span class="jc-node-tool mono">TypeScript · Node.js · whatsapp-web.js · Chromium</span><span class="jc-node-summary">Envía por la sesión vinculada y registra la entrega.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node jc-node--human" type="button" data-node="11" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">11</span>
+    <span class="jc-node-copy"><span class="jc-node-title">La decisión es tuya.</span><span class="jc-node-tool mono">Dashboard Django · plantillas HTML/CSS</span><span class="jc-node-summary">Marc revisa las ofertas y decide desde el dashboard.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li>
+<li class="jc-step">
+  <button class="jc-node" type="button" data-node="12" aria-pressed="false" aria-controls="node-detail">
+    <span class="jc-node-number mono">12</span>
+    <span class="jc-node-copy"><span class="jc-node-title">Mañana no parte de cero.</span><span class="jc-node-tool mono">Django ORM · PostgreSQL</span><span class="jc-node-summary">Guarda decisiones y versiones del perfil para mañana.</span></span>
+    <span class="jc-node-mark" aria-hidden="true">↗</span>
+  </button>
+</li></ol>
+                <p class="jc-loop-caption mono"><span aria-hidden="true">↙</span> DECISIONES + PREFERENCIAS</p>
+              </section>
+            </div>
+            <div class="jc-inspector-slot">
+              <aside class="jc-inspector" id="node-detail" aria-labelledby="detail-title" hidden>
+                <div class="jc-detail-topline mono"><span id="detail-kicker">NOTAS DEL SISTEMA</span><button type="button" class="jc-detail-close" aria-label="Quitar selección" hidden>×</button></div>
+                <h3 id="detail-title">Cada paso tiene<br />su porqué.</h3>
+                <p id="detail-description">Pasa sobre un nodo o llega a él con el teclado para explorar su función. Haz clic para fijar la lectura y ver sus conexiones.</p>
+                <div id="detail-fields" hidden><p class="jc-detail-tool mono" id="detail-tool"></p><dl><div><dt class="mono">ENTRA</dt><dd id="detail-input"></dd></div><div><dt class="mono">SALE</dt><dd id="detail-output"></dd></div></dl><div class="jc-example"><p class="mono">EJEMPLO ILUSTRATIVO</p><p id="detail-example"></p></div></div>
+                <p class="jc-detail-foot mono" id="detail-foot">EXPLORA / CONECTA / COMPRENDE</p>
+              </aside>
+            </div>
+          </div>
+          <div class="jc-map-legend mono"><span><i class="jc-legend-line"></i> Flujo principal</span><span><i class="jc-legend-line jc-legend-line--data"></i> Datos</span><span><i class="jc-legend-line jc-legend-line--context"></i> Contexto del siguiente día</span><span><i class="jc-legend-human"></i> Decisión humana</span></div>
+          <div class="jc-map-notes"><p>Hover o foco para explorar. Clic para fijar. Escape para liberar.</p><p>Horarios de inicio. La reproducción es ilustrativa, no representa la duración real.</p></div>
+          <noscript><p class="jc-no-script">Este mapa muestra los doce pasos del sistema. Activa JavaScript para explorar entradas y salidas, fijar recorridos y reproducir el ciclo.</p></noscript>
+          <p class="jc-sr-only" id="map-announcement" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="jc-closing wrap section-block" aria-labelledby="closing-title">
+        <div class="section-topline mono"><p><span class="section-index">[03]</span> EL CRITERIO</p><span>EL ÚLTIMO PASO ES TUYO</span></div>
+        <div class="jc-closing-layout"><h2 id="closing-title">Encontrar opciones<br />es trabajo del sistema.<br /><span>Elegir es cosa tuya.</span></h2><div><p>El resumen llega por WhatsApp. La revisión ocurre en el dashboard. Puedes guardar, descartar o seguir una oportunidad; también ajustar lo que buscas.</p><p>Esas decisiones vuelven al sistema. Mañana, la búsqueda empieza desde ahí.</p><a class="text-link" href="/#job-crawler"><span class="link-arrow" aria-hidden="true">↖</span> Volver a los proyectos</a></div></div>
+      </section>
+    </main>
+    <footer class="site-footer wrap"><a class="brand footer-brand" href="/" aria-label="Valhalla, inicio">VALHALLA</a><p class="mono">PROBLEMA. CRITERIO. PRODUCTO.</p><a class="back-top mono" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a><span class="copyright mono">© <span data-year>2026</span></span></footer>
+    <script type="module" src="/src/job-crawler.ts"></script>
+  </body>
+</html>
