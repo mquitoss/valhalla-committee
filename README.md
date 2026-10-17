@@ -2,7 +2,7 @@
 
 Implementación de las especificaciones internas de producto y diseño. HTML semántico, TypeScript y Vite, sin framework de interfaz ni servicios externos necesarios para mostrar la página.
 
-La dirección «Editorial Hacker / Lab Notes» se concreta en fondo carbón, tipografía Geist, retícula y separadores visibles, diagramas y verde reservado a interacción y estados. El contenido vive en `index.html`, las interacciones en `src/main.ts` y los estilos y puntos de ruptura en `src/style.css`.
+La dirección «Editorial Hacker / Lab Notes» se concreta en fondo carbón, tipografía Geist, retícula y separadores visibles, diagramas y verde reservado a interacción y estados. El contenido principal vive en `index.html`, las interacciones en `src/main.ts` y los estilos y puntos de ruptura compartidos en `src/style.css`. La página dedicada de Job Crawler vive en `proyectos/job-crawler/index.html`, con sus propios estilos, datos e interacciones en `src/job-crawler*`.
 
 ## Desarrollo
 
@@ -41,13 +41,24 @@ No hay backend de envío, almacenamiento de contactos ni confirmación de entreg
 
 ## Interacciones y accesibilidad
 
-- Los cuatro proyectos aparecen como expedientes consecutivos. Cada uno tiene un desplegable nativo con la pregunta que se investiga, accesible con teclado.
+- Los cinco proyectos aparecen como expedientes consecutivos. Cada uno tiene un desplegable nativo con la pregunta que se investiga, accesible con teclado. Job Crawler enlaza a su página dedicada en `/proyectos/job-crawler/`.
 - Los diagramas SVG tienen descripciones accesibles y una composición específica para móvil. Son esquemas conceptuales, no capturas de productos en funcionamiento.
-- La página conserva su contenido esencial y los desplegables en el HTML. Sin JavaScript, el menú y los cuatro proyectos siguen visibles.
+- La página conserva su contenido esencial y los desplegables en el HTML. Sin JavaScript, el menú, los cinco proyectos y los doce pasos del mapa de Job Crawler siguen visibles.
 - Navegación por anclas con sección activa, menú móvil con cierre mediante Escape, enlace para saltar al contenido, foco visible y diálogo nativo.
 - Adaptación desde 320 px y reducción de animación con `prefers-reduced-motion`.
 - Se distinguen fase y actividad: Turnos en curso; TraceFlow en fase de prototipo; OpenClaw/Aiden en investigación y en curso, según la guía 003. La interfaz principal está en español.
 - La tesis sobre el criterio forma parte del método de cinco pasos. El comité incluye los roles de Marc, Raúl y Javi y tres círculos superpuestos que muestran cómo se complementan; su intersección central representa el criterio compartido.
+
+## Job Crawler
+
+Quinto expediente, en funcionamiento. La página dedicada desarrolla «Buscar oportunidades ya es un trabajo» y mantiene los dos disparadores independientes de la referencia: búsqueda a las 05:00 y publicación de los resultados disponibles al corte de las 09:00. PostgreSQL comparte contexto entre ambos ciclos. El análisis con Codex/OpenAI es opcional; las decisiones finales son humanas.
+
+- El mapa conserva los doce pasos y distingue flujo principal, datos, contexto del siguiente día y revisión humana.
+- Hover o foco para ver función, herramientas, entradas, salidas y un ejemplo ilustrativo. Clic para fijar el nodo y sus conexiones; Escape o el cierre liberan la selección. Los filtros fijan un ciclo completo.
+- En pantallas estrechas, las notas aparecen junto al nodo seleccionado. En móvil, los ciclos se apilan sin reducir el texto a una miniatura.
+- «Recorrer el día» reproduce una secuencia ilustrativa que se puede pausar. No consulta datos reales ni representa la duración real de los procesos.
+- La animación se puede desactivar; el mapa pausa el recorrido al salir de pantalla o cambiar de pestaña. Con `prefers-reduced-motion`, la lectura avanza manualmente con «Siguiente paso».
+- Vite genera ambas páginas como entradas HTML independientes. La ruta dedicada funciona con navegación directa en el resultado estático de `dist/`.
 
 ## Analítica
 
@@ -69,6 +80,6 @@ Están disponibles como eventos `valhalla:analytics`, en `window.valhallaEvents`
 ## Antes de publicar
 
 1. Crear el buzón y configurar su dirección.
-2. Confirmar textos públicos y estados de los cuatro proyectos.
+2. Confirmar textos públicos y estados de los cinco proyectos.
 3. Configurar el colector si se necesitan métricas persistentes.
 4. Decidir dominio y alojamiento; comprobar la versión publicada en escritorio y móvil.
