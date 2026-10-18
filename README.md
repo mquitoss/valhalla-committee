@@ -2,7 +2,19 @@
 
 Implementación de las especificaciones internas de producto y diseño. HTML semántico, TypeScript y Vite, sin framework de interfaz ni servicios externos necesarios para mostrar la página.
 
-La dirección «Editorial Hacker / Lab Notes» se concreta en fondo carbón, tipografía Geist, retícula y separadores visibles, diagramas y verde reservado a interacción y estados. El contenido principal vive en `index.html`, las interacciones en `src/main.ts` y los estilos y puntos de ruptura compartidos en `src/style.css`. La página dedicada de Job Crawler vive en `proyectos/job-crawler/index.html`, con sus propios estilos, datos e interacciones en `src/job-crawler*`.
+Esta rama prueba la guía `docs/product/004-valhalla-guia-estilo.md` adaptada al fondo negro solicitado: tipografía sans serif, espacio generoso, verde salvia y azul hielo, iconos lineales y diagramas de geometría simple. La cabecera presenta el recorrido problema → criterio → producto. Los cinco proyectos, el comité, el método y el contacto conservan sus contenidos e interacciones.
+
+El contenido principal vive en `index.html` y las interacciones en `src/main.ts`. `src/style.css` contiene la base compartida; `src/landing.css` aplica la variante visual y sus puntos de ruptura sólo a la landing. Geist se sirve localmente, sin nuevas dependencias. La página dedicada de Job Crawler conserva la dirección «Editorial Hacker / Lab Notes» y vive en `proyectos/job-crawler/index.html`, con sus propios estilos, datos e interacciones en `src/job-crawler*`.
+
+## Prueba de diseño
+
+Rama: `codex/landing-estilo-escandinavo`. La guía 004 orienta composición, tipografía y acentos; el fondo sigue siendo `#0a0a0a`. Es una prueba local para evaluar frente al diseño de `main`, sin publicación.
+
+```sh
+npm run dev -- --port 4180 --strictPort
+```
+
+Abrir `http://127.0.0.1:4180/`. La ruta `/proyectos/job-crawler/` permite comprobar que el estilo de la página dedicada sigue siendo independiente.
 
 ## Desarrollo
 
