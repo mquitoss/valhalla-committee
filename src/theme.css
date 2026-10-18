@@ -1,0 +1,67 @@
+/* Guide 004 adapted to a black background, shared by the landing and projects. */
+@layer theme {
+  :root.scandinavian-theme {
+    color-scheme: dark;
+    --color-coal: #0a0a0a;
+    --color-paper: #f0f1eb;
+    --color-graphite: #a2aaa2;
+    --color-steel: #2a302b;
+    --color-terminal: #a7d8a7;
+    --color-signal-line: #7a907e;
+    --color-surface: #111512;
+    --color-sage: #a7d8a7;
+    --color-ice: #b0e0e6;
+    --color-panel: #101411;
+    --content-max: 1320px;
+  }
+
+  body { min-width: 0; }
+  h1, h2, h3 { font-weight: 450; letter-spacing: -.045em; }
+  h2 { font-size: clamp(40px, 4.5vw, 64px); line-height: 1.08; }
+  .mono, .main-nav a, .text-link, .project-metadata dt, .diagram-label, .committee-common-label {
+    font-family: 'Geist', sans-serif;
+  }
+  .mono { font-size: 12px; letter-spacing: .055em; }
+  .section-block { padding-block: 36px 96px; }
+  .section-block::before { content: none; }
+  .section-index { color: var(--color-sage); }
+  .section-topline p { gap: 16px; }
+  .header-inner { min-height: 88px; gap: 22px; }
+  .brand { gap: 12px; font-size: 20px; letter-spacing: .01em; font-weight: 600; }
+  .brand-symbol { width: 30px; height: 30px; fill: none; stroke: var(--color-sage); stroke-width: 1.8; }
+  .header-note { margin-left: 0; letter-spacing: 0; font-size: 13px; }
+  .main-nav { gap: 30px; }
+  .main-nav a { gap: 7px; font-size: 14px; }
+  .nav-number { font-size: 10px; }
+  .main-nav a[aria-current='location'] { text-decoration-thickness: 1px; text-underline-offset: 8px; }
+
+  .text-link { text-transform: none; font-size: 15px; letter-spacing: 0; gap: 24px; }
+  .primary-link, .contact-action .text-link {
+    background: var(--color-sage); color: var(--color-coal); border: 1px solid var(--color-sage);
+    border-radius: 4px; padding: 13px 20px; min-height: 52px;
+    transition: background-color .18s, border-color .18s;
+  }
+  .primary-link .link-arrow, .contact-action .link-arrow { color: inherit; }
+  .primary-link:hover, .contact-action .text-link:hover { color: var(--color-coal); background: #bce5b8; border-color: #bce5b8; }
+  .status { padding: 5px 10px; border: 1px solid var(--color-steel); border-radius: 4px; font-size: 10px; letter-spacing: .04em; }
+  .status--active { background: #142019; border-color: #344a39; }
+  .site-footer { padding-block: 28px; }
+  .footer-brand { font-size: 18px; }
+  .site-footer .mono { font-size: 11px; }
+
+  @media (max-width: 800px) {
+    .header-inner { min-height: 76px; gap: 0; }
+    .section-block { padding-block: 28px 64px; }
+  }
+  @media (max-width: 600px) {
+    .header-inner { min-height: 72px; }
+    .brand { font-size: 18px; gap: 9px; }
+    .brand-symbol { width: 26px; height: 26px; }
+    .section-block { padding-block: 26px 48px; }
+    .section-topline { font-size: 10px; letter-spacing: .035em; }
+    .section-topline p { gap: 10px; }
+    .section-topline > span { max-width: 135px; }
+    h2 { font-size: clamp(36px, 8.4vw, 46px); }
+    .site-footer { gap: 12px 18px; padding-block: 24px; }
+  }
+}

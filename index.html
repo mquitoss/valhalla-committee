@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scandinavian-theme landing-page">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,13 +13,13 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>Valhalla — ¿Tiene que seguir siendo así?</title>
   </head>
-  <body>
+  <body id="inicio">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
-    <header class="site-header" id="inicio">
+    <header class="site-header">
       <div class="header-inner wrap">
-        <a class="brand" href="#inicio" aria-label="Valhalla, inicio">VALHALLA</a>
-        <span class="header-note mono">LAB / <span data-year>2026</span></span>
-        <button class="nav-toggle mono" type="button" aria-expanded="false" aria-controls="main-nav" hidden>MENÚ / 04 <span class="menu-symbol" aria-hidden="true">+</span></button>
+        <a class="brand" href="#inicio" aria-label="Valhalla, inicio"><svg class="brand-symbol" viewBox="0 0 32 32" aria-hidden="true"><path d="m5 7 11 19L27 7M12 7l4 7 4-7" /></svg>VALHALLA</a>
+        <span class="header-note mono">Laboratorio de producto</span>
+        <button class="nav-toggle mono" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menú <span class="menu-symbol" aria-hidden="true">+</span></button>
         <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
           <a href="#comite"><span class="nav-number">[01]</span> Comité</a>
           <a href="#proyectos"><span class="nav-number">[02]</span> Proyectos</a>
@@ -31,13 +31,23 @@
 
     <main id="contenido" tabindex="-1">
       <section class="hero wrap" id="pregunta" aria-labelledby="hero-title" data-nav-section>
-        <div class="hero-topline mono"><p>INVESTIGACIÓN / PRODUCTO / IA</p><span>OBSERVACIÓN_001</span></div>
-        <h1 id="hero-title">¿Tiene que<br /> seguir siendo así?</h1>
-        <div class="hero-bottom">
-          <div class="hero-intro"><p>Hay cosas que las organizaciones siguen haciendo porque siempre las han hecho así.</p><p>Nos interesan esas cosas.</p><a class="text-link" href="#proyectos" data-cta="explore-projects"><span class="link-arrow" aria-hidden="true">↓</span> Explorar proyectos</a></div>
-          <p class="hero-definition">Un laboratorio de producto<br /> para investigar problemas reales<br /> y construir otras respuestas.</p>
+        <div class="hero-topline mono"><p>INVESTIGACIÓN · PRODUCTO · IA</p><span>Una pregunta como punto de partida</span></div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <h1 id="hero-title">¿Tiene que<br /> seguir siendo<br /> <span>así?</span></h1>
+            <div class="hero-intro"><p>Hay cosas que las organizaciones siguen haciendo porque siempre las han hecho así.</p><p>Nos interesan esas cosas.</p><a class="text-link primary-link" href="#proyectos" data-cta="explore-projects">Explorar proyectos <span class="link-arrow" aria-hidden="true">↗</span></a></div>
+          </div>
+          <figure class="hero-map" aria-labelledby="hero-map-title">
+            <figcaption id="hero-map-title">De lo cotidiano a lo posible.</figcaption>
+            <ol class="hero-map-steps" role="list">
+              <li><span class="hero-map-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M9 7h14v18H9zM13 13h6m-6 6h6M5 11v18h14" /></svg></span><div><span class="hero-map-label">01 · Problema</span><h2>Algo que se repite.</h2><p>Una tarea. Una fricción. Un «siempre se ha hecho así».</p></div></li>
+              <li><span class="hero-map-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="14" cy="14" r="8" /><path d="m20 20 7 7M11 14h6m-3-3v6" /></svg></span><div><span class="hero-map-label">02 · Criterio</span><h2>Una buena pregunta.</h2><p>Entender qué hace falta, antes de decidir qué construir.</p></div></li>
+              <li><span class="hero-map-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="4" /><path d="m10 16 4 4 8-8" /></svg></span><div><span class="hero-map-label">03 · Producto</span><h2>Otra forma de hacerlo.</h2><p>Una respuesta útil, puesta a prueba en el mundo real.</p></div></li>
+            </ol>
+            <p class="hero-map-note">IA cuando ayuda. Software cuando basta.</p>
+          </figure>
         </div>
-        <div class="hero-baseline mono"><span>PROBLEMA <span aria-hidden="true">→</span> CRITERIO <span aria-hidden="true">→</span> PRODUCTO</span><span class="baseline-note">CUESTIONAR ES UN BUEN COMIENZO.</span></div>
+        <div class="hero-baseline"><p>Un laboratorio de producto para investigar problemas reales<br /> y construir otras respuestas.</p><a href="#comite">Conoce al comité <span aria-hidden="true">↓</span></a></div>
       </section>
 
       <section class="committee-section wrap section-block" id="comite" aria-labelledby="committee-title" data-nav-section>
@@ -101,13 +111,13 @@
       </section>
 
       <section class="projects-section wrap section-block" id="proyectos" aria-labelledby="projects-title" data-nav-section>
-        <div class="section-topline mono"><p><span class="section-index">[02]</span> PROYECTOS</p><span>05 EXPEDIENTES</span></div>
+        <div class="section-topline mono"><p><span class="section-index">[02]</span> PROYECTOS</p><span>05 FORMAS DE EXPLORAR</span></div>
         <div class="section-heading"><h2 id="projects-title">Cinco proyectos.<br /> Una misma pregunta.</h2><nav class="project-index mono" aria-label="Índice de proyectos"><a href="#turnos">01 / Turnos <span aria-hidden="true">↗</span></a><a href="#traceflow">02 / TraceFlow <span aria-hidden="true">↗</span></a><a href="#aiden">03 / OpenClaw & Aiden <span aria-hidden="true">↗</span></a><a href="#yggdrasil">04 / Yggdrasil <span aria-hidden="true">↗</span></a><a href="#job-crawler">05 / Job Crawler <span aria-hidden="true">↗</span></a></nav></div>
 
         <article class="project project--turnos" id="turnos" data-project="turnos" aria-labelledby="turnos-title">
           <div class="project-topline mono"><span>PROJECT_001</span><span class="status status--active"><span class="status-dot" aria-hidden="true"></span><span class="status-key">ACTIVIDAD /</span> EN CURSO</span></div>
           <div class="project-layout">
-            <div class="project-copy"><h3 id="turnos-title">TURNOS</h3><p class="project-claim">Un problema operativo<br /> convertido en producto.</p><p class="project-description">Cubrir una ausencia no debería convertirse en una cadena de llamadas. Exploramos cómo conectar las necesidades de los centros con la disponibilidad de los profesionales.</p>
+            <div class="project-copy"><h3 id="turnos-title">Turnos</h3><p class="project-claim">Un problema operativo<br /> convertido en producto.</p><p class="project-description">Cubrir una ausencia no debería convertirse en una cadena de llamadas. Exploramos cómo conectar las necesidades de los centros con la disponibilidad de los profesionales.</p>
             </div>
             <figure class="project-figure">
               <div class="figure-label mono"><span>FIG. 01 / ENCONTRAR ENCAJE</span><span aria-hidden="true">↳</span></div>
@@ -138,7 +148,7 @@
         <article class="project project--traceflow" id="traceflow" data-project="traceflow" aria-labelledby="traceflow-title">
           <div class="project-topline mono"><span>PROJECT_002</span><span class="status"><span class="status-ring" aria-hidden="true"></span><span class="status-key">FASE /</span> PROTOTIPO</span></div>
           <div class="project-layout">
-            <div class="project-copy"><h3 id="traceflow-title">TRACEFLOW</h3><p class="project-claim">Git para decisiones.</p><p class="project-description">El contexto, la aprobación, el cambio y el resultado. Una historia visible para entender por qué se decidió algo y cómo hemos llegado hasta aquí.</p>
+            <div class="project-copy"><h3 id="traceflow-title">TraceFlow</h3><p class="project-claim">Git para decisiones.</p><p class="project-description">El contexto, la aprobación, el cambio y el resultado. Una historia visible para entender por qué se decidió algo y cómo hemos llegado hasta aquí.</p>
             </div>
             <figure class="project-figure">
               <div class="figure-label mono"><span>FIG. 02 / SEGUIR EL RASTRO</span><span aria-hidden="true">↳</span></div>
@@ -167,7 +177,7 @@
         <article class="project project--aiden" id="aiden" data-project="aiden" aria-labelledby="aiden-title">
           <div class="project-topline mono"><span>PROJECT_003</span><span class="status"><span class="status-ring" aria-hidden="true"></span><span class="status-key">FASE /</span> INVESTIGACIÓN</span></div>
           <div class="project-layout">
-            <div class="project-copy"><h3 id="aiden-title">OPENCLAW<br /><span class="title-slash">/</span> AIDEN</h3><p class="project-claim">¿Qué ocurre cuando los agentes dejan de ser una demo?</p><p class="project-description">Agentes, memoria y herramientas dentro de procesos reales. Personas que dirigen, revisan y deciden qué merece hacerse.</p>
+            <div class="project-copy"><h3 id="aiden-title">OpenClaw<br /><span class="title-slash">/</span> Aiden</h3><p class="project-claim">¿Qué ocurre cuando los agentes dejan de ser una demo?</p><p class="project-description">Agentes, memoria y herramientas dentro de procesos reales. Personas que dirigen, revisan y deciden qué merece hacerse.</p>
             </div>
             <figure class="project-figure">
               <div class="figure-label mono"><span>FIG. 03 / EL CRITERIO EN EL CENTRO</span><span aria-hidden="true">↳</span></div>
@@ -196,7 +206,7 @@
         <article class="project project--yggdrasil" id="yggdrasil" data-project="yggdrasil" aria-labelledby="yggdrasil-title">
           <div class="project-topline mono"><span>PROJECT_004</span><span class="status"><span class="status-ring" aria-hidden="true"></span><span class="status-key">FASE /</span> CONCEPTO</span></div>
           <div class="project-layout">
-            <div class="project-copy"><h3 id="yggdrasil-title">YGGDRASIL</h3><p class="project-claim">¿Quién le dio ese poder?</p><p class="project-description">Una capa de autoridad para agentes de IA. Qué pueden hacer, quién les concedió ese poder y hasta dónde pueden delegarlo. Límites claros y un rastro que permita retirarlo.</p></div>
+            <div class="project-copy"><h3 id="yggdrasil-title">Yggdrasil</h3><p class="project-claim">¿Quién le dio ese poder?</p><p class="project-description">Una capa de autoridad para agentes de IA. Qué pueden hacer, quién les concedió ese poder y hasta dónde pueden delegarlo. Límites claros y un rastro que permita retirarlo.</p></div>
             <figure class="project-figure">
               <div class="figure-label mono"><span>FIG. 04 / EL PODER TIENE UN ORIGEN</span><span aria-hidden="true">↳</span></div>
               <svg class="diagram diagram--desktop" viewBox="0 0 600 320" role="img" aria-labelledby="yggdrasil-diagram-title yggdrasil-diagram-description">
@@ -226,7 +236,7 @@
           <div class="project-topline mono"><span>PROJECT_005</span><span class="status status--active"><span class="status-dot" aria-hidden="true"></span><span class="status-key">ACTIVIDAD /</span> EN FUNCIONAMIENTO</span></div>
           <div class="project-layout">
             <div class="project-copy">
-              <h3 id="job-crawler-title">JOB CRAWLER</h3>
+              <h3 id="job-crawler-title">Job Crawler</h3>
               <p class="project-claim">Buscar oportunidades<br /> ya es un trabajo.</p>
               <p class="project-description">Portales, filtros, ofertas repetidas. Cada día, vuelta a empezar. Un sistema que busca y evalúa oportunidades y te acerca las que merecen una mirada. Tú decides qué hacer con ellas.</p>
               <a class="text-link project-page-link" href="/proyectos/job-crawler/" data-cta="job-crawler-page">Explorar Job Crawler <span class="link-arrow" aria-hidden="true">↗</span></a>
@@ -263,11 +273,11 @@
         <div class="section-topline mono"><p><span class="section-index">[03]</span> MÉTODO</p><span>DEL PROBLEMA A LA EVIDENCIA</span></div>
         <div class="method-thesis"><h2 id="method-title"><span>La IA hace abundante<br /> la capacidad de construir.</span><strong>El criterio sigue<br /> siendo escaso.</strong></h2><p>Elegir qué construir.<br /> Para quién.<br /> Y con qué límites.</p></div>
         <ol class="method-steps" role="list">
-          <li><span class="method-number mono">01 /</span><div><h3>Observar</h3><p>Encontrar una fricción real en el trabajo cotidiano.</p></div></li>
-          <li><span class="method-number mono">02 /</span><div><h3>Investigar</h3><p>Entender qué existe y dónde queda una oportunidad.</p></div></li>
-          <li><span class="method-number mono">03 /</span><div><h3>Construir</h3><p>Probar la solución más pequeña que pueda aportar valor.</p></div></li>
-          <li><span class="method-number mono">04 /</span><div><h3>Validar</h3><p>Ponerla delante de usuarios y escuchar la evidencia.</p></div></li>
-          <li><span class="method-number mono">05 /</span><div><h3>Aprender</h3><p>Decidir qué mejorar, qué seguir explorando y qué dejar atrás.</p></div></li>
+          <li><span class="method-number mono">01</span><div><h3>Observar</h3><p>Encontrar una fricción real en el trabajo cotidiano.</p></div></li>
+          <li><span class="method-number mono">02</span><div><h3>Investigar</h3><p>Entender qué existe y dónde queda una oportunidad.</p></div></li>
+          <li><span class="method-number mono">03</span><div><h3>Construir</h3><p>Probar la solución más pequeña que pueda aportar valor.</p></div></li>
+          <li><span class="method-number mono">04</span><div><h3>Validar</h3><p>Ponerla delante de usuarios y escuchar la evidencia.</p></div></li>
+          <li><span class="method-number mono">05</span><div><h3>Aprender</h3><p>Decidir qué mejorar, qué seguir explorando y qué dejar atrás.</p></div></li>
         </ol>
         <p class="method-loop mono"><span aria-hidden="true">↳</span> CADA RESPUESTA ABRE LA SIGUIENTE PREGUNTA.</p>
       </section>

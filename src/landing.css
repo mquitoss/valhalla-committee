@@ -1,0 +1,219 @@
+/* Landing composition, layered over the shared Scandinavian theme. */
+@layer landing {
+  .hero { padding-top: 32px; }
+  .hero-topline { font-size: 11px; }
+  .hero-topline > p { color: var(--color-graphite); }
+  .hero-topline > span { font-size: 13px; letter-spacing: 0; }
+  .hero-layout { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: clamp(40px, 6vw, 88px); padding-block: 54px 62px; }
+  .hero h1 { font-size: clamp(64px, 6.8vw, 98px); line-height: 1.03; letter-spacing: -.055em; margin: 0 0 30px; }
+  .hero h1 > span { color: var(--color-sage); }
+  .hero-intro { max-width: 450px; }
+  .hero-intro p { font-size: 17px; line-height: 1.7; }
+  .hero-intro p + p { margin-top: 8px; }
+  .hero-intro .text-link { margin-top: 28px; }
+  .hero-map { background: var(--color-panel); border: 1px solid var(--color-steel); border-radius: 6px; padding: 32px; }
+  .hero-map > figcaption { font-size: 16px; padding-bottom: 28px; border-bottom: 1px solid var(--color-steel); }
+  .hero-map-steps { list-style: none; padding: 32px 0; }
+  .hero-map-steps li { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 20px; position: relative; padding-bottom: 32px; }
+  .hero-map-steps li:last-child { padding-bottom: 0; }
+  .hero-map-steps li:not(:last-child)::after { content: ''; position: absolute; top: 58px; bottom: 10px; left: 24px; border-left: 1px solid var(--color-signal-line); }
+  .hero-map-icon { display: grid; place-content: center; width: 48px; height: 48px; border: 1px solid var(--color-signal-line); border-radius: 50%; color: var(--color-sage); }
+  .hero-map-icon svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+  .hero-map-steps li:nth-child(2) .hero-map-icon { color: var(--color-ice); border-color: #71989b; }
+  .hero-map-steps li:last-child .hero-map-icon { background: var(--color-sage); border-color: var(--color-sage); color: var(--color-coal); }
+  .hero-map-label { display: block; color: var(--color-graphite); font-size: 12px; margin-bottom: 6px; }
+  .hero-map h2 { font-size: 23px; line-height: 1.2; letter-spacing: -.025em; text-wrap: initial; }
+  .hero-map-steps p { color: var(--color-graphite); font-size: 14px; line-height: 1.6; margin-top: 8px; max-width: 275px; }
+  .hero-map-note { border-top: 1px solid var(--color-steel); padding-top: 20px; color: var(--color-graphite); font-size: 13px; }
+  .hero-baseline { margin-top: 0; padding-block: 28px 34px; border-top: 1px solid var(--color-steel); font-size: 14px; }
+  .hero-baseline a { display: inline-flex; align-items: center; gap: 28px; min-height: 44px; color: var(--color-paper); white-space: nowrap; }
+  .hero-baseline a:hover { color: var(--color-sage); }
+
+  .committee-layout { margin-top: 64px; gap: 72px; }
+  .committee-copy > p { font-size: 17px; line-height: 1.8; max-width: 510px; }
+  .committee-copy > .committee-principle { color: var(--color-sage); }
+  .people { margin-top: 32px; }
+  .people > div { grid-template-columns: 70px minmax(0, 1fr); padding-block: 15px; }
+  .people dd { text-align: left; font-size: 15px; }
+  .committee-figure { padding: 32px 20px; border: 0; }
+  .committee-circle-fill { fill: var(--color-sage); fill-opacity: .06; }
+  .committee-circle-fill circle:nth-child(2) { fill: var(--color-ice); }
+  .committee-overlap { fill: var(--color-sage); fill-opacity: .05; }
+  .committee-common { fill: var(--color-sage); fill-opacity: .16; }
+  .committee-circle-outline { stroke: var(--color-signal-line); stroke-width: 1; }
+  .committee-member-name { font-weight: 450; }
+  .committee-common-label { fill: var(--color-paper); font-weight: 500; }
+  .committee-figure figcaption { font-size: 14px; margin-top: 32px; }
+
+  .section-heading { margin-block: 58px 64px; }
+  .project-index { min-width: 250px; letter-spacing: 0; font-size: 14px; }
+  .project-index a { min-height: 44px; border-bottom: 1px solid var(--color-steel); }
+  .projects-section { padding-bottom: 0; }
+  .project { padding-block: 28px 64px; }
+  .project-topline { margin-bottom: 40px; }
+  .project-topline > span:first-child { font-size: 11px; letter-spacing: .09em; }
+  .project-copy h3 { font-size: clamp(42px, 4.6vw, 64px); font-weight: 450; letter-spacing: -.045em; line-height: 1.08; }
+  .project-claim { font-size: clamp(24px, 2.1vw, 29px); line-height: 1.35; letter-spacing: -.025em; margin-top: 22px; }
+  .project-description { line-height: 1.8; }
+  .project-layout, :is(.project--traceflow, .project--yggdrasil) .project-layout { column-gap: 64px; }
+  .project-figure, :is(.project--traceflow, .project--yggdrasil) .project-figure {
+    border: 1px solid var(--color-steel); padding: 28px; border-radius: 6px; background: var(--color-panel);
+  }
+  :is(.project--traceflow, .project--yggdrasil) .project-figure { background: #101415; }
+  .figure-label { font-size: 10px; margin-bottom: 28px; letter-spacing: .06em; }
+  .diagram-guide { display: none; }
+  .diagram-lines { stroke-width: 1.25; }
+  .diagram-label { font-size: 15px; letter-spacing: .015em; }
+  .diagram-node { fill: #16241b; stroke: var(--color-signal-line); rx: 5px; }
+  .human-node { fill: #1d3023; stroke: var(--color-sage); }
+  .diagram-point { fill: #192c2e; stroke: var(--color-ice); }
+  .project-figure figcaption { margin-top: 24px; border-top: 1px solid var(--color-steel); padding-top: 20px; gap: 6px; }
+  .project-figure figcaption .mono { font-size: 10px; color: var(--color-graphite); letter-spacing: .035em; }
+  .project-figure figcaption > span:last-child { font-size: 12px; }
+  .project-metadata { gap: 20px 28px; }
+  .project-metadata dt { font-size: 10px; letter-spacing: .07em; }
+  .project-metadata dd { font-size: 14px; }
+  .project-details summary { font-size: 15px; min-height: 48px; }
+  .details-symbol { font-size: 20px; font-family: 'Geist', sans-serif; }
+
+  .method-section { padding-bottom: 88px; }
+  .method-thesis { grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); margin-top: 64px; gap: 64px; }
+  .method-thesis h2 { font-size: clamp(38px, 4.2vw, 60px); line-height: 1.14; }
+  .method-thesis h2 > strong { color: var(--color-sage); font-weight: 450; margin-top: 24px; }
+  .method-thesis > p { font-size: 17px; line-height: 1.9; }
+  .method-steps { gap: 24px; margin-top: 64px; }
+  .method-steps li { position: relative; padding-top: 24px; }
+  .method-number { display: grid; place-content: center; width: 38px; height: 38px; border: 1px solid var(--color-signal-line); border-radius: 50%; color: var(--color-sage); font-size: 11px; letter-spacing: 0; margin-bottom: 24px; }
+  .method-steps h3 { font-size: 25px; letter-spacing: -.03em; }
+  .method-steps p { font-size: 15px; line-height: 1.8; }
+  .method-loop { font-size: 11px; margin-top: 42px; letter-spacing: .04em; }
+
+  .contact-section { padding-block: 36px 64px; }
+  .contact-layout { gap: 64px; margin-top: 58px; }
+  .contact-layout h2 { font-size: clamp(72px, 8vw, 108px); font-weight: 450; }
+  .contact-intro { font-size: 25px; line-height: 1.5; max-width: 590px; }
+  .contact-action .text-link { font-size: 15px; gap: 24px; }
+  .contact-fallback { font-size: 14px; margin-top: 40px; }
+  dialog { border-color: var(--color-steel); border-radius: 6px; background: var(--color-surface); }
+  dialog::backdrop { background: rgb(0 0 0 / 75%); }
+  input, textarea { border-radius: 4px; background: var(--color-coal); }
+  .button { background: var(--color-sage); border-color: var(--color-sage); color: var(--color-coal); border-radius: 4px; }
+  .button > span { color: inherit; }
+  .button:hover { background: #bce5b8; border-color: #bce5b8; color: var(--color-coal); }
+
+  @media (max-width: 1100px) {
+    .hero-layout { gap: 36px; }
+    .hero h1 { font-size: clamp(62px, 7.3vw, 80px); }
+    .hero-map { padding: 26px; }
+    .hero-map-steps li { gap: 16px; }
+    .hero-map h2 { font-size: 21px; }
+    .committee-layout { gap: 40px; }
+    .committee-figure { padding-inline: 0; }
+    .project-layout, :is(.project--traceflow, .project--yggdrasil) .project-layout { column-gap: 36px; }
+    .method-thesis { gap: 40px; }
+    .method-steps { gap: 20px; }
+    .method-steps h3 { font-size: 22px; }
+    .contact-layout { gap: 36px; }
+    .contact-action .text-link { gap: 16px; padding-inline: 16px; }
+  }
+  @media (max-width: 1000px) {
+    .project-copy h3 { font-size: 52px; }
+    .project-figure, :is(.project--traceflow, .project--yggdrasil) .project-figure { padding: 28px; }
+    .project-figure figcaption { flex-direction: row; flex-wrap: wrap; gap: 10px 24px; }
+    .project-description { max-width: 620px; }
+  }
+  @media (max-width: 800px) {
+    .header-inner { min-height: 76px; gap: 0; }
+    .main-nav { gap: 0 24px; padding-block: 8px 20px; }
+    .main-nav a { font-size: 15px; }
+    .nav-toggle { font-size: 14px; letter-spacing: 0; }
+    .hero-layout { grid-template-columns: 1fr; gap: 40px; padding-block: 42px; }
+    .hero h1 { font-size: clamp(58px, 10vw, 78px); }
+    .hero-intro { max-width: 520px; }
+    .hero-map { max-width: 600px; width: 100%; }
+    .hero-map-steps p { max-width: 380px; }
+    .hero-map h2 { font-size: 24px; }
+    .hero-baseline { align-items: flex-start; font-size: 13px; gap: 20px; }
+    .hero-baseline br { display: none; }
+    .hero-baseline p { max-width: 390px; }
+    .section-block { padding-block: 28px 64px; }
+    .committee-layout { margin-top: 42px; }
+    .committee-figure { padding: 16px 0 0; }
+    .section-heading { margin-block: 42px; align-items: flex-start; }
+    .project-index { min-width: 210px; font-size: 13px; }
+    .project { padding-bottom: 44px; }
+    .projects-section { padding-bottom: 0; }
+    .method-thesis { grid-template-columns: 1fr; margin-top: 42px; gap: 28px; }
+    .method-thesis h2 { font-size: 44px; }
+    .method-steps { margin-top: 40px; gap: 32px 24px; }
+    .method-steps h3 { font-size: 25px; }
+    .contact-layout { margin-top: 44px; grid-template-columns: 1fr; gap: 32px; }
+    .contact-action > p { margin-bottom: 20px; }
+  }
+  @media (max-width: 600px) {
+    .wrap { width: calc(100% - 40px); }
+    .header-inner { min-height: 72px; }
+    .brand { font-size: 18px; gap: 9px; }
+    .brand-symbol { width: 26px; height: 26px; }
+    .hero { padding-top: 24px; }
+    .hero-topline { font-size: 10px; letter-spacing: .06em; }
+    .hero-layout { gap: 36px; padding-block: 36px; }
+    .hero h1 { font-size: clamp(50px, 11.5vw, 68px); margin-bottom: 26px; }
+    .hero-intro p { font-size: 16px; }
+    .hero-map { padding: 24px 20px; }
+    .hero-map > figcaption { font-size: 15px; padding-bottom: 24px; }
+    .hero-map-steps { padding-block: 28px; }
+    .hero-map-steps li { grid-template-columns: 40px minmax(0, 1fr); gap: 14px; padding-bottom: 28px; }
+    .hero-map-steps li:not(:last-child)::after { left: 20px; top: 50px; }
+    .hero-map-icon { width: 40px; height: 40px; }
+    .hero-map-icon svg { width: 24px; height: 24px; }
+    .hero-map h2 { font-size: 20px; }
+    .hero-map-steps p { font-size: 14px; }
+    .hero-map-note { font-size: 12px; }
+    .hero-baseline { flex-direction: column; gap: 14px; padding-block: 24px; font-size: 14px; }
+    .hero-baseline a { gap: 20px; }
+    .section-block { padding-block: 26px 48px; }
+    .section-topline { font-size: 10px; letter-spacing: .035em; }
+    .section-topline p { gap: 10px; }
+    .section-topline > span { max-width: 135px; }
+    h2 { font-size: clamp(36px, 8.4vw, 46px); }
+    .committee-layout { margin-top: 36px; gap: 28px; }
+    .committee-copy > p { font-size: 16px; line-height: 1.8; }
+    .people > div { grid-template-columns: 1fr; gap: 4px; }
+    .committee-figure { padding-top: 12px; }
+    .committee-figure figcaption { font-size: 14px; margin-top: 20px; }
+    .section-heading { margin-block: 36px; }
+    .project-index { max-width: none; font-size: 14px; }
+    .project-index a { font-size: 14px; }
+    .projects-section { padding-bottom: 0; }
+    .project { padding-block: 24px 44px; }
+    .project-topline { margin-bottom: 30px; }
+    .project-topline > span:first-child { font-size: 10px; padding-top: 6px; }
+    .status { max-width: 174px; padding: 5px 8px; gap: 6px; font-size: 9px; }
+    .status-key { font-size: 9px; }
+    .project-copy h3 { font-size: clamp(38px, 10vw, 50px); }
+    .project-claim { font-size: 25px; }
+    .project-figure, :is(.project--traceflow, .project--yggdrasil) .project-figure { padding: 20px 14px; }
+    .figure-label { font-size: 9px; letter-spacing: .03em; margin-bottom: 18px; }
+    .diagram-label.mobile-label { font-size: 12px; }
+    .project-figure figcaption { flex-direction: column; gap: 8px; margin-top: 18px; padding-top: 18px; }
+    .project-figure figcaption .mono { font-size: 10px; }
+    .project-metadata dd { font-size: 16px; }
+    .project-details summary { font-size: 15px; gap: 8px; }
+    .method-thesis { margin-top: 36px; }
+    .method-thesis h2 { font-size: clamp(34px, 8.2vw, 44px); }
+    .method-steps { gap: 0; margin-top: 32px; }
+    .method-steps li { grid-template-columns: 38px minmax(0, 1fr); gap: 18px; padding-block: 24px; }
+    .method-number { margin: 0; padding: 0; }
+    .method-steps h3 { font-size: 27px; }
+    .method-steps p { font-size: 16px; }
+    .method-loop { font-size: 10px; margin-top: 16px; }
+    .contact-layout { margin-top: 40px; }
+    .contact-layout h2 { font-size: clamp(64px, 16vw, 90px); }
+    .contact-intro { font-size: 23px; }
+    .contact-action .text-link { font-size: 15px; padding-inline: 18px; }
+    .contact-fallback { margin-top: 32px; }
+    .site-footer { gap: 12px 18px; padding-block: 24px; }
+    dialog h2 { font-size: 32px; }
+  }
+}

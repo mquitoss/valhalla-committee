@@ -1,4 +1,6 @@
 import './style.css';
+import './theme.css';
+import './landing.css';
 
 type AnalyticsEventName = 'project_view' | 'project_explore' | 'cta_click' | 'contact_open' | 'contact_email_draft' | 'contact_email_open';
 type AnalyticsEvent = { event: AnalyticsEventName; properties: Record<string, string>; timestamp: string };
