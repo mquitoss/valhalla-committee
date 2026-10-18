@@ -4,7 +4,7 @@ Implementación de las especificaciones internas de producto y diseño. HTML sem
 
 Esta rama prueba la guía `docs/product/004-valhalla-guia-estilo.md` adaptada al fondo negro solicitado: tipografía sans serif, espacio generoso, verde salvia y azul hielo, iconos lineales y diagramas de geometría simple. La cabecera presenta el recorrido problema → criterio → producto. Los cinco proyectos, el comité, el método y el contacto conservan sus contenidos e interacciones.
 
-El contenido principal vive en `index.html` y las interacciones en `src/main.ts`. `src/style.css` contiene la base compartida; `src/landing.css` aplica la variante visual y sus puntos de ruptura sólo a la landing. Geist se sirve localmente, sin nuevas dependencias. La página dedicada de Job Crawler conserva la dirección «Editorial Hacker / Lab Notes» y vive en `proyectos/job-crawler/index.html`, con sus propios estilos, datos e interacciones en `src/job-crawler*`.
+El contenido principal vive en `index.html` y las interacciones en `src/main.ts`. `src/style.css` contiene la base compartida y `src/theme.css` reúne la paleta, tipografía, cabecera y controles de la prueba. `src/landing.css` define la composición de la landing. La página de Job Crawler aplica el mismo tema en `proyectos/job-crawler/index.html`, con su composición, datos e interacciones en `src/job-crawler*`. Geist se sirve localmente, sin nuevas dependencias.
 
 ## Prueba de diseño
 
@@ -14,7 +14,7 @@ Rama: `codex/landing-estilo-escandinavo`. La guía 004 orienta composición, tip
 npm run dev -- --port 4180 --strictPort
 ```
 
-Abrir `http://127.0.0.1:4180/`. La ruta `/proyectos/job-crawler/` permite comprobar que el estilo de la página dedicada sigue siendo independiente.
+Abrir `http://127.0.0.1:4180/` para ver la landing y `/proyectos/job-crawler/` para explorar el mapa del proyecto con el mismo estilo.
 
 ## Desarrollo
 
@@ -66,6 +66,7 @@ No hay backend de envío, almacenamiento de contactos ni confirmación de entreg
 Quinto expediente, en funcionamiento. La página dedicada desarrolla «Buscar oportunidades ya es un trabajo» y mantiene los dos disparadores independientes de la referencia: búsqueda a las 05:00 y publicación de los resultados disponibles al corte de las 09:00. PostgreSQL comparte contexto entre ambos ciclos. El análisis con Codex/OpenAI es opcional; las decisiones finales son humanas.
 
 - El mapa conserva los doce pasos y distingue flujo principal, datos, contexto del siguiente día y revisión humana.
+- Búsqueda usa salvia y publicación azul hielo; las etiquetas, números y estados de selección permiten distinguir los recorridos sin depender sólo del color. La cabecera resume las dos horas de inicio y la revisión humana.
 - Hover o foco para ver función, herramientas, entradas, salidas y un ejemplo ilustrativo. Clic para fijar el nodo y sus conexiones; Escape o el cierre liberan la selección. Los filtros fijan un ciclo completo.
 - En pantallas estrechas, las notas aparecen junto al nodo seleccionado. En móvil, los ciclos se apilan sin reducir el texto a una miniatura.
 - «Recorrer el día» reproduce una secuencia ilustrativa que se puede pausar. No consulta datos reales ni representa la duración real de los procesos.

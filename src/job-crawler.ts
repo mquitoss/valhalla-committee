@@ -1,4 +1,5 @@
 import './style.css';
+import './theme.css';
 import './job-crawler.css';
 import { crawlerNodes, type CrawlerNode, type Loop } from './job-crawler-data';
 
